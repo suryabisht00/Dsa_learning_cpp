@@ -1,1 +1,18 @@
 .vscode/
+
+# Ignore all executable files
+*.exe
+
+# Optional: You might also want to ignore other common build artifacts
+*.o
+*.obj
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# Optional: Ignore build directories
+/build/
+/debug/
+/release/
