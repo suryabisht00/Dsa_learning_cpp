@@ -11,28 +11,32 @@ int main(){
 
     // Agar tum object pehle se bana chuke ho, toh push_back theek hai.
     v.push_back(1); 
-    v.push_back({1,2,4}); 
-    //now container - {1},needs to add curly braces
+    // Push back takes only one element at a time for primitive types like int
+    v.push_back(2);
+    v.push_back(4);
+    //now container - {1, 2, 4}
 
-    // Agar tum naya object banana chahte ho vector ke andar hi, toh emplace_back best ha
-    v.emplace_back(2);
-    v.emplace_back(1,2,3);
-    //now container - {1,2},faster tehn push_back, not need to add curly braces
+    // Agar tum naya object banana chahte ho vector ke andar hi, toh emplace_back best hai
+    v.emplace_back(5);
+    // emplace_back also takes only one element for int vectors
+    //now container - {1, 2, 4, 5}, faster than push_back, no need for curly braces
 
+    // Example of vector with initial size and values
+    vector<int> v2(5, 100); // creates a vector of size 5 with all elements initialized to 100 {100,100,100,100,100}
+
+    vector<int> v3(5); // vector of size 5 with default values {0,0,0,0,0}
+
+    // Vector of pairs example (correctly commented out)
+    // vector<pair<int,int>> vct;
+    // vct.push_back(make_pair(1, 2));
+    // vct.emplace_back(3, 4); // emplace_back can directly take pair elements
+
+    vector<int>::iterator it = v.begin(); // it is an iterator which points to the first element of vector
+    it++;
+    cout << *it << endl; // prints the second element of vector (value at iterator position)
     
-    vector<int> v(5,100); // creates a vector of size 5 and all elements are initialized to 100 {100,100,100,100,100}
-
-    vector<int> s2(5); // vector of size 5 with default values {0,0,0,0,0}
-
-    // we can also use vector of pairs
-    vector<pair<int,int>> vct ;
-
-    vct.push_back(2);
-    vct.emplace_back(3);
-    
-    cout<<*()<<endl; // it will give the address of first element of vector
-
-    
+    // Print all elements in the vector
+    cout << "Vector elements: " <<  it[2];
     
     return 0;
 }
