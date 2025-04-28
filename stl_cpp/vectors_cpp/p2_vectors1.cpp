@@ -34,7 +34,7 @@ int main(){
     vector<int>::iterator it = v.begin(); // it is an iterator which points to the first element of vector
     it++;
     cout << *it << endl; // prints the second element of vector (value at iterator position)
-    
+    cout <<v[2]<<"this is the third element of vector"<<endl; // prints the third element of vector
     // Print all elements in the vector
     cout << "Vector elements: " <<  it[2];
     
