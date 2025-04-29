@@ -12,7 +12,8 @@ int main(){
     
 
     // added element at last
-    v.emplace_back(111,23,234,23); 
+    v.push_back(82); 
+    v.emplace_back(111); 
 
     // Size of vector
     cout<<"\n\n Size of vactor is = "<<v.size()<<endl;
@@ -45,9 +46,9 @@ int main(){
 
 
     // remove element from specifi index/position
-    int position = 3;
-    cout<<"\n\n remove element from specifi index/position = "<<v[position]<<", index = "<<position<<endl;
-    v.erase(v.begin() + position);
+    int index = 3;
+    cout<<"\n\n remove element from specifi index/position = "<<v[index]<<", index = "<<index<<endl;
+    v.erase(v.begin() + index);
 
 
 
