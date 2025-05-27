@@ -57,10 +57,17 @@ int main(){
     for(int i=0; i<v.size(); i++){
         cout<<v[i]<<" ,";
     }
+
+    
+    cout<<"\n\nelements of vector is (iterate using different technique )= ";
+    for(auto val : v){
+        cout<<val<<" ";
+    }
     
 
     // first element
     cout<<endl<<*v.begin();
+
 
     return 0;
 }

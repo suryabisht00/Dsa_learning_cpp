@@ -1,4 +1,4 @@
-// its not optimized it take O(n) time complexity
+// its not optimized it take O(n log n) time complexity
 // #include<bits/stdc++.h>
 // using namespace std;
 
@@ -17,7 +17,7 @@
 // }
 
 
-// optimised techique
+// optimised techique O(n)
 #include<bits/stdc++.h>
 using namespace std;
 
