@@ -8,12 +8,14 @@ bool CheckArmstrong(int num){
     int total = 0;
     
 
+    int digits = (num == 0)?1:int(log10(num)+1);
+
     while(temp>0){
         int LastDigit = temp % 10;
 
-        // pow(base, exponent), pow(2,3) = 2*2*2 = 8
-
-        total = total + round(pow(LastDigit,int(log10(num)+1)));
+        // pow(base, exponent), pow(2,3) = 2*2*2 = 8,  pow return float so to handle this use round function to convert nearst integer
+        
+        total = total + round(pow(LastDigit, digits));
         temp /= 10;
     }
     if(total == num ){
