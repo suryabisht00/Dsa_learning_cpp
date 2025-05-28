@@ -22,6 +22,8 @@ int main(){
 
 
 /*
+Time complexity of Euclidean algorithms:-  O(logmin(a,b))
+
 In this program we have used Euclidean algorithms i which 
 gcd(a,b) = gcd(a % b , b), where a>b
 
